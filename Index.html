@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+
+<body class="bodylog">
+  <header class="header-index"></header>
+
+<div class="redondo"></div>
+<div class="contenedor-fuera-log">
+</div>
+  <div class="contenedor-log">
+    <div class="logologin">
+      <img src="Imagenes/login.png" class="loginpng">
+      <h2 class="heading-1">WhatsApp Web</h2>
+      <button class="btnlogin" onclick="redirigir()">Iniciar sesión</button>
+    </div>
+  
+
+
+
+
+  </div>
+  <script>
+    function redirigir() {
+      // Cambiar la URL actual
+      window.location.href = "Principal.html";
+    }
+  </script>
+  <script>
+    var miVideo = document.getElementById("videoindex");
+    miVideo.currentTime = 0; // Detener el video en el segundo 10
+
+    miVideo.addEventListener("timeupdate", function () {
+      if (miVideo.currentTime >= 6) {
+        miVideo.pause(); // Pausar el video cuando alcance el segundo 10
+      }
+    });
+  </script>
+
+</body>
+
+</html>
